@@ -13,6 +13,7 @@ const MainNavigation = () => {
 
   const handleLogout=()=>{
     authCtx.logout()
+    // localStorage.removeItem('auth_token')
     history.replace('/auth')
   }
 

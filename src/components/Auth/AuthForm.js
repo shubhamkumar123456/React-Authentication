@@ -57,6 +57,7 @@ const AuthForm = () => {
       }
     }).then((data)=>{
       authCtx.login(data.idToken);
+      // localStorage.setItem('auth_token', data.idToken)
       history.replace('/profile')
 
       console.log(data)
